@@ -1,0 +1,15 @@
+<!-- recentAccounts.html -->
+<template>
+    <lightning-card>
+        <h1>Recent Accounts</h1>
+        <div>
+            
+            <ul>
+                <template for:each={accountList} for:item="account">
+                    <li key={account.Id}>{account.Name}</li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+    
+</template>
